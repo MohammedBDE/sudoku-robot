@@ -1,0 +1,27 @@
+{
+  "TL": [
+    80.0,
+    -250.0,
+    98.9,
+    -171.75,
+    1.79,
+    91.16
+  ],
+  "TR": [
+    -80.0,
+    -250.0,
+    98.9,
+    -171.75,
+    1.79,
+    91.16
+  ],
+  "BL": [
+    80.0,
+    -90.0,
+    98.9,
+    -171.75,
+    1.79,
+    91.16
+  ],
+  "_note": "PLANNED by scripts/place_paper.py (grid centre 0.0, -170.0 mm, rotation 0.0 deg, 20mm cells). Align the paper to it with scripts/place_paper.py; re-run that (or re-teach with jog_console.py) if the paper moves."
+}
