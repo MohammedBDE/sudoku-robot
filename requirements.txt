@@ -1,0 +1,35 @@
+# Exact, fully pinned environment (direct AND transitive dependencies),
+# so every install is identical. These are the versions running on the
+# robot's Raspberry Pi (mycobot 280 Pi, Python 3.13), i.e. the set that
+# has actually driven the real arm. Target interpreter: Python 3.13.
+#
+# Install with:  pip install -r requirements.txt
+# Verify with:   python scripts/verify_env.py        (see scripts/ setup.sh / setup.ps1)
+#
+# To upgrade deliberately: change a pin, reinstall into a fresh venv,
+# run `python -m pytest`, then update this file.
+
+# -- Core: solvers, grid utilities, RL agent ------------------------------
+numpy==2.5.2
+
+# -- Rendering printable puzzles + digit templates (puzzles/render.py,
+#    vision/digit_recognizer.py) ------------------------------------------
+pillow==12.3.0
+
+# -- Camera capture, grid detection, digit recognition (vision/).
+#    Headless build: no GUI/imshow, which this project doesn't use. ------
+opencv-python-headless==5.0.0.93
+
+# -- Real mycobot 280 hardware (writer/arm_controller.MyCobotArmController,
+#    teach_cli.py, jog_console.py). Imported lazily: simulated runs and
+#    all tests work without an arm attached. ---------------------------------
+pymycobot==4.0.6
+pyserial==3.5
+
+# -- Tests -------------------------------------------------------------------
+pytest==9.1.1
+iniconfig==2.3.0
+packaging==26.3
+pluggy==1.6.0
+pygments==2.21.0
+colorama==0.4.6; sys_platform == "win32"
