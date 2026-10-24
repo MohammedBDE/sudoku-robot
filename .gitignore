@@ -1,0 +1,19 @@
+# -- Python / tooling caches (regenerated automatically; never commit) -------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# -- Virtual environments -----------------------------------------------------
+.venv/
+.venv-win/
+
+# -- Machine-specific config ----------------------------------------------------
+# The iPhone's RTSP URL depends on your network. Commit the example instead:
+# config/camera_config.example.json.
+config/camera_config.json
+
+# -- Generated output -------------------------------------------------------------
+# Re-created by `python -m sudoku_robot.vision.capture_check` / `detect_check`.
+calib/camera_test_frame.jpg
+calib/grid_debug_*.jpg
