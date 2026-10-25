@@ -1,4 +1,10 @@
 # sudoku_robot
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/Vision-OpenCV-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
+[![Robot](https://img.shields.io/badge/Robot-myCobot%20280%20Pi-00A86B)](https://www.elephantrobotics.com/en/mycobot-280-pi-2023-en/)
+[![Solvers](https://img.shields.io/badge/solvers-backtracking%20%7C%20RL%20%7C%20human--style-FF6F00)](https://github.com/MohammedBDE/sudoku-robot)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/MohammedBDE/sudoku-robot)
 
 A Sudoku-solving robot built on a **mycobot 280 Pi** arm with a pen in its
 end effector and an **iPhone** acting as an RTSP camera. It:
